@@ -1,0 +1,262 @@
+body {
+  background: rgb(255, 206, 216);
+  background: radial-gradient(circle, rgb(255, 206, 216) 0%, rgb(220, 243, 255) 100%);
+  background-position: left top;
+  background-size: auto;
+}
+
+.ContactUsFrame {
+  position: fixed;
+  width: 66rem;
+  height: 34rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  margin-top: 1rem;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, white 0%, white 75.5%, #183A4A 24.5%, #183A4A 100%);
+  box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.3);
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+.brief {
+  position: relative;
+}
+
+p {
+  width: 34rem;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+}
+
+span {
+  color: #DD5471;
+}
+
+.info {
+  height: 2em;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  /* or 171% */
+  letter-spacing: 0.01em;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.formFrame, button, select, input {
+  width: 30rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0rem;
+  border: 0.2rem solid #ccc;
+  box-sizing: border-box;
+  transition: 0.5s;
+  display: block;
+}
+
+select {
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0rem;
+  border: 0.2rem solid #ccc;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+button {
+  display: flex;
+  border-width: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0.1rem;
+  margin-right: 0rem;
+  height: 3rem;
+  background: #DD5471;
+  color: #FFFFFF;
+}
+
+table {
+  display: table;
+  width: 30rem;
+  border-collapse: separate;
+  border-spacing: 0.3em;
+  border: 0em;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 3.5rem;
+}
+
+th {
+  padding-left: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 0.4rem;
+  text-align: left;
+}
+
+td {
+  color: #DD5471;
+}
+
+.imgContainer {
+  float: right;
+  margin-top: -30rem;
+  overflow: clip;
+  width: 22rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .ContactUsFrame {
+    position: fixed;
+    width: 66rem;
+    height: 34rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, white 0%, white 75.5%, #183A4A 24.5%, #183A4A 100%);
+    box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.3);
+    border-radius: 2rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 320px) {
+  .ContactUsFrame {
+    position: fixed;
+    width: 18rem;
+    height: 28rem;
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0 0.2rem;
+    padding-right: 4rem;
+    margin-top: 0.1rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+    margin-bottom: 0.1rem;
+    background: linear-gradient(to right, white 0%, white 75.5%, #183A4A 24.5%, #183A4A 100%);
+    box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.3);
+    border-radius: 2rem;
+    box-sizing: border-box;
+  }
+  .brief {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  p {
+    width: 12rem;
+  }
+  h1 {
+    font-weight: 300;
+  }
+  .info {
+    height: 0.6rem;
+    font-weight: 200;
+    font-size: 0.6em;
+  }
+  .formFrame, input, select, button {
+    width: 12rem;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.1rem;
+    margin-bottom: 0.03rem;
+  }
+  input {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0.08rem;
+    margin-right: 0rem;
+    border: 0.08rem solid #ccc;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: block;
+  }
+  select {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0.08rem;
+    margin-right: 0rem;
+    border: 0.08rem solid #ccc;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  button {
+    display: flex;
+    border-width: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0.08rem;
+    margin-right: 0rem;
+    height: 1.2rem;
+    background: #DD5471;
+    color: #FFFFFF;
+  }
+  table {
+    display: table;
+    width: 4rem;
+    border-collapse: separate;
+    border-spacing: 0.03em;
+    border: 0em;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0.8rem;
+  }
+  th {
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 2rem;
+    text-align: left;
+    font-size: 0.4em;
+  }
+  td {
+    color: #DD5471;
+    font-size: 0.4em;
+  }
+  svg {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .imgContainer {
+    float: center;
+    margin-top: 1rem;
+    overflow: clip;
+    width: 15.5em;
+    height: 9rem;
+    margin-right: -2rem;
+  }
+}/*# sourceMappingURL=StyleSCSS.css.map */

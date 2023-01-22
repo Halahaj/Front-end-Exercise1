@@ -1,0 +1,320 @@
+@import "_VariablesSCSS";
+
+@mixin important-text{
+    font-family: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-style: normal;
+}
+@mixin formframe1{
+    width: 30rem;
+    //padding: 1rem 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0.3rem;
+}
+@mixin formframe2{
+    width: 12rem;
+    //padding: 1rem 2rem;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.1rem;
+    margin-bottom: 0.03rem;
+}
+
+$language: Arabic;
+
+$flote: left;
+$text-align: left;
+$margin-right: 0.8rem;
+$margin-left: 0rem;
+$padding-right: 2rem;
+$padding-left: 0rem;
+$background-position: left top;
+
+
+@if $language == Arabic {
+    $flote: right;
+    $text-align: right;
+    $margin-left: 0.8rem;
+    $margin-right: 0rem;
+    $padding-right: 0rem;
+    $padding-left: 2rem;
+    $background-position: right top;
+}
+body{
+    background: $backgroundColor;
+    background: $backgroundColorRG;
+    background-position: $background-position;
+    background-size: auto;
+}
+.ContactUsFrame{
+    position: fixed;
+    background: $ContactUsFrameBackground;
+    box-shadow: $ContactUsFrameShadow; 
+    box-sizing: border-box;
+}
+.brief{
+    position: relative;
+    //margin: -4em 4em -2em 3em;
+    //width: 40%;
+}
+h1{
+    font-family: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-style: normal;
+}
+p{ 
+    @extend h1;
+    width: 34rem;
+}
+span{
+
+    color: $pinkColor;
+}
+
+@media screen and (max-width: 1024px){
+    
+
+.ContactUsFrame{
+
+    width: 66rem;
+    height: 34rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 4rem;
+    //margin: 1.5% 9% 1.5% 9%;
+    margin-top: 1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+
+}
+
+h1{
+    
+    font-weight: 700;
+    color: #000000;
+}
+
+.info{
+    //width: 36em;
+    height: 2em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.formFrame{
+    @include formframe1();
+}
+input{
+    @include formframe1();
+    //margin: 0rem 0rem 0.3rem 0rem;
+    //margin-top: 0rem;
+    //margin-left: 0rem;
+    margin-bottom: 0.3rem;
+    //margin-right: 0rem;
+    border: 0.2rem solid $borders;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: block;
+  }
+
+  select{
+    @include formframe1();
+    //margin: 0rem  1.8rem 0.4rem 1rem;
+    //margin-top: 0rem;
+    //margin-left: 0rem;
+    margin-bottom: 0.3rem;
+    //margin-right: 0rem;
+    border: 0.2rem solid $borders;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  button{
+    @include formframe1();
+    display: flex;
+    border-width: 0;
+    justify-content: center;
+    align-items: center;
+    //margin: 0rem 1.8rem 0rem 1rem;
+    //margin-top: 0rem;
+    //margin-left: 0rem;
+    margin-bottom: 0.1rem;
+    //margin-right: 0rem;
+    height: 3rem;
+    background: $pinkColor;
+    color: #FFFFFF;
+
+  }
+
+  table{
+    display: table;
+    width: 30rem;
+    border-collapse: separate ;
+    border-spacing: 0.3em ;
+    //border: 0em;
+    //margin: 0rem 3.5rem 0rem;
+    //margin-top: 0rem;
+    //margin-left: 0rem;
+    //margin-bottom: 0rem;
+    margin-right: 3.5rem;
+
+
+  }
+
+  th{
+    //padding: 0rem 0.4rem 0rem 0rem;
+    //padding-left: 0rem;
+    //padding-top: 0rem;
+    //padding-bottom: 0rem;
+    padding-right: 0.4rem;
+    text-align: $text-align; 
+    }
+    td{
+    color: $pinkColor;
+    }
+
+    .imgContainer{
+        float: $flote;
+        //margin: -30rem 0rem 0rem 0rem;
+        margin-top: -30rem;
+        //overflow-clip-margin: content-box;
+        overflow: clip;
+        width: 22rem;
+        height: 30rem;
+
+    }
+        
+    }
+
+    @media screen and (max-width: 320px){
+        .ContactUsFrame{
+
+            width: 18rem;
+            height: 28rem;
+            padding-left: 0.4rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.0.2rem;
+            padding-right: 4rem;
+            //margin: 1.5% 9% 1.5% 9%;
+            margin-top: 0.1rem;
+            margin-right: 0.7rem;
+            margin-left: 0.7rem;
+            margin-bottom: 0.1rem;
+            border-radius: 2rem;
+        }
+        .brief{
+            margin-bottom: 2rem;
+        }
+        p{ 
+            width: 12rem;
+        }
+        h1{
+            font-weight:300 ;
+         }
+        .info{
+            height: 0.6rem;
+            font-weight:200;
+            font-size: 0.6em;
+        }
+        .formFrame{
+            @include formframe2();
+        }
+        input{
+            @include formframe2();
+            //margin: 0rem 0rem 0.3rem 0rem;
+            //margin-top: 0rem;
+            //margin-left: 0rem;
+            margin-bottom: 0.08rem;
+            //margin-right: 0rem;
+            border: 0.08rem solid $borders;
+            box-sizing: border-box;
+            transition: 0.5s;
+            display: block;
+          }
+          select{
+            @include formframe2();
+            //margin: 0rem  1.8rem 0.4rem 1rem;
+            //margin-top: 0rem;
+            //margin-left: 0rem;
+            margin-bottom: 0.08rem;
+            //margin-right: 0rem;
+            border: 0.08rem solid $borders;
+            box-sizing: border-box;
+            transition: 0.5s;
+          }
+          button{
+            @include formframe2();
+            display: flex;
+            border-width: 0;
+            justify-content: center;
+            align-items: center;
+            //margin: 0rem 1.8rem 0rem 1rem;
+            //margin-top: 0rem;
+            //margin-left: 0rem;
+            margin-bottom: 0.08rem;
+            //margin-right: 0rem;
+        
+            height: 1.2rem;
+        
+            background: $pinkColor;
+            color: #FFFFFF;
+        
+          }
+          table{
+            display: table;
+            width: 4rem;
+            border-collapse: separate ;
+            border-spacing: 0.03em ;
+            border: 0em;
+            //margin: 0rem 3.5rem 0rem;
+            //margin-top: 0rem;
+            margin-left: $margin-left;
+            //margin-bottom: 0rem;
+            margin-right: $margin-right;
+        
+        
+          }
+          th{
+            //padding: 0rem 0.4rem 0rem 0rem;
+            padding-left: $padding-left;
+            //padding-top: 0rem;
+            //padding-bottom: 0rem;
+            padding-right: $padding-right;
+            text-align: $text-align; 
+            font-size: 0.4em;
+            }
+            td{
+            color: $pinkColor;
+            font-size: 0.4em;
+            }
+            svg{
+                height: 0.8rem;
+                width: 0.8rem;
+            }
+            .imgContainer{
+                float: center;
+                //margin: -30rem 0rem 0rem 0rem;
+                margin-top: 1rem;
+                //overflow-clip-margin: content-box;
+                overflow: clip;
+                width: 15.5em;
+                height: 9rem;
+                margin-right: -2rem;
+        
+            }
+
+
+    }
+
+    
+ 
